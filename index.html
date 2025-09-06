@@ -30,16 +30,16 @@
         }
 
         .heart {
-    width: 100px;
-    height: 100px;
-    background: #2c2c2c;
-    position: relative;
-    transform: rotate(-45deg);
-    margin: 20px 0;
-    animation: heartbeat 1.5s ease-in-out infinite;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+            width: 100px;
+            height: 100px;
+            background: #2c2c2c;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px 0;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
         .heart:before,
         .heart:after {
@@ -164,8 +164,8 @@
 
         .memory-card:hover {
             transform: translateY(-10px);
-            border-color: #e74c3c;
-            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.2);
+            border-color: #f8bbd9;
+            box-shadow: 0 10px 25px rgba(248, 187, 217, 0.2);
         }
 
         .memory-emoji {
@@ -180,8 +180,8 @@
         }
 
         .countdown {
-    background: linear-gradient(45deg, #f8bbd9, #fce4ec);
-    color: #4a4a4a;
+            background: linear-gradient(45deg, #f8bbd9, #fce4ec);
+            color: #4a4a4a;
             padding: 20px;
             border-radius: 15px;
             margin: 20px 0;
@@ -191,8 +191,8 @@
         }
 
         @keyframes glow {
-            from { box-shadow: 0 0 10px rgba(255, 107, 107, 0.5); }
-            to { box-shadow: 0 0 20px rgba(255, 107, 107, 0.8), 0 0 30px rgba(255, 107, 107, 0.3); }
+            from { box-shadow: 0 0 10px rgba(248, 187, 217, 0.5); }
+            to { box-shadow: 0 0 20px rgba(248, 187, 217, 0.8), 0 0 30px rgba(248, 187, 217, 0.3); }
         }
 
         .floating-hearts {
@@ -226,8 +226,8 @@
         }
 
         .surprise-button {
-    background: linear-gradient(45deg, #f8bbd9, #fce4ec);
-    color: #4a4a4a;
+            background: linear-gradient(45deg, #f8bbd9, #fce4ec);
+            color: #4a4a4a;
             border: none;
             padding: 15px 30px;
             border-radius: 25px;
@@ -235,12 +235,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin: 20px 10px;
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+            box-shadow: 0 5px 15px rgba(248, 187, 217, 0.3);
+            font-weight: bold;
         }
 
         .surprise-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 8px 25px rgba(248, 187, 217, 0.4);
         }
 
         .modal {
@@ -256,7 +257,7 @@
         }
 
         .modal-content {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4338ca 0%, #312e81 100%);
             margin: 10% auto;
             padding: 40px;
             border-radius: 20px;
@@ -299,7 +300,7 @@
             h1 { font-size: 2rem; }
             .message { font-size: 1rem; }
         }
-    </style>
+</style>
 </head>
 <body>
     <div class="floating-hearts" id="floatingHearts"></div>
@@ -446,6 +447,7 @@
 </body>
 
 </html>
+
 
 
 
