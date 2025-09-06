@@ -342,10 +342,10 @@
                     <span class="memory-emoji">🎵</span>
                     <div class="memory-text">Nossa música</div>
                 </div>
-                <div class="memory-card">
-                    <span class="memory-emoji">🌙</span>
-                    <div class="memory-text">Conversas até tarde</div>
-                </div>
+               <div class="memory-card" onclick="showLoveQuote()">
+    <span class="memory-emoji">🌙</span>
+    <div class="memory-text">Conversas até tarde</div>
+</div>
                 <div class="memory-card">
                     <span class="memory-emoji">🏠</span>
                     <div class="memory-text">Nossos planos</div>
@@ -423,6 +423,10 @@
             alert('Seu sorriso é a melhor parte dos meus dias, Farei tudo para que ele sempre apareça. ✨😊');
         }
 
+        function showLoveQuote() {
+            window.open('https://www.citador.pt/frases/imagens/frases-ha-sempre-alguma-loucura-no-amor-mas-ha-sempre-u-friedrich-wilhelm-nietzsche-902.jpg', '_blank');
+        }
+
         // Criar corações automaticamente a cada 10 segundos
         setInterval(createHearts, 10000);
 
@@ -442,6 +446,7 @@
 </body>
 
 </html>
+
 
 
 
