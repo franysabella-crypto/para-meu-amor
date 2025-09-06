@@ -30,45 +30,23 @@
         }
 
         .heart {
-            width: 100px;
-            height: 100px;
-            background: #2c2c2c;
-            position: relative;
-            transform: rotate(-45deg);
+            font-size: 80px;
+            color: #2c2c2c;
             margin: 20px 0;
             animation: heartbeat 1.5s ease-in-out infinite;
             cursor: pointer;
             transition: all 0.3s ease;
-        }
-
-        .heart:before,
-        .heart:after {
-            content: '';
-            width: 52px;
-            height: 80px;
-            position: absolute;
-            left: 50px;
-            top: 0;
-            background: #2c2c2c;
-            border-radius: 50px 50px 0 0;
-            transform: rotate(-45deg);
-            transform-origin: 0 100%;
-        }
-
-        .heart:after {
-            left: 0;
-            transform: rotate(45deg);
-            transform-origin: 100% 100%;
+            user-select: none;
         }
 
         .heart:hover {
-            transform: rotate(-45deg) scale(1.2);
+            transform: scale(1.2);
             filter: brightness(1.2);
         }
 
         @keyframes heartbeat {
-            0%, 100% { transform: rotate(-45deg) scale(1); }
-            50% { transform: rotate(-45deg) scale(1.1); }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
 
         .main-card {
@@ -306,7 +284,7 @@
     <div class="floating-hearts" id="floatingHearts"></div>
     
     <div class="container">
-        <div class="heart" onclick="createHearts()"></div>
+        <div class="heart" onclick="createHearts()">🖤</div>
         
         <div class="main-card">
             <h1>Para Meu Amor ❤️</h1>
@@ -447,6 +425,7 @@
 </body>
 
 </html>
+
 
 
 
